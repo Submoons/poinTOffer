@@ -1,26 +1,26 @@
-##### ÌâÄ¿£ºÉè¼ÆÒ»¸öÀà£¬Ö»ÄÜÉú³É¸ÃÀàµÄÒ»¸öÊµÀı 
-ÍÆ¼öÊ¹ÓÃ£º
-Ò»¡¢¾²Ì¬ÄÚ²¿Àà:
+##### é¢˜ç›®ï¼šè®¾è®¡ä¸€ä¸ªç±»ï¼Œåªèƒ½ç”Ÿæˆè¯¥ç±»çš„ä¸€ä¸ªå®ä¾‹ 
+æ¨èä½¿ç”¨ï¼š
+ä¸€ã€é™æ€å†…éƒ¨ç±»:
 
 ```java
 public class Singleton{
-		private static class SingletonHolder{
-				private static final Singleton INSTANCE = new Singleton();
-		}
-		private Singleton(){};
+	private static class SingletonHolder{
+		private static final Singleton INSTANCE = new Singleton();
+	}
+	private Singleton(){};
 
-		public static final Singleton getInstance(){
-				return SingletonHolder.INSTANCE;
-		}
+	public static final Singleton getInstance(){
+		return SingletonHolder.INSTANCE;
+	}
 }
 ```
-ÓÉÓÚ SingletonHolder ÊÇË½ÓĞµÄ£¬³ıÁË getInstance() Ö®ÍâÃ»ÓĞ°ì·¨·ÃÎÊËü£¬Òò´ËËüÊÇÀÁººÊ½µÄ£»
-Í¬Ê±¶ÁÈ¡ÊµÀıµÄÊ±ºò²»»á½øĞĞÍ¬²½£¬Ã»ÓĞĞÔÄÜÈ±Ïİ£»Ò²²»ÒÀÀµ JDK °æ±¾¡£ÄÜÍêÃÀÓ¦¶Ô¶àÊı³¡¾°¡£
+ç”±äº SingletonHolder æ˜¯ç§æœ‰çš„ï¼Œé™¤äº† getInstance() ä¹‹å¤–æ²¡æœ‰åŠæ³•è®¿é—®å®ƒï¼Œå› æ­¤å®ƒæ˜¯æ‡’æ±‰å¼çš„ï¼›
+åŒæ—¶è¯»å–å®ä¾‹çš„æ—¶å€™ä¸ä¼šè¿›è¡ŒåŒæ­¥ï¼Œæ²¡æœ‰æ€§èƒ½ç¼ºé™·ï¼›ä¹Ÿä¸ä¾èµ– JDK ç‰ˆæœ¬ã€‚èƒ½å®Œç¾åº”å¯¹å¤šæ•°åœºæ™¯ã€‚
 
-¶ş¡¢Ã¶¾Ùµ¥Àı
+äºŒã€æšä¸¾å•ä¾‹
 ```java
 public enum Singleton{
-		//Àí½âÎª public static final Singleton INSTANCE;
-		INSTANCE
+	//ç†è§£ä¸º public static final Singleton INSTANCE;
+	INSTANCE
 }
 ```
