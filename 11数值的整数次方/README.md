@@ -4,7 +4,7 @@
 
 # 解题思路
 
-![](E:\剑指offer\poinTOffer\11数值的整数次方\11.jpg)
+![](https://github.com/Submoons/poinTOffer/blob/master/11%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/11.jpg)
 
 ```
  (x*x)n/2 可以通过递归求解，并且每次递归 n 都减小一半，因此整个算法的时间复杂度为 O(logN)。
